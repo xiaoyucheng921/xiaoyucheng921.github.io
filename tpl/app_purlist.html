@@ -1,0 +1,74 @@
+<div class="wrapper-md" ng-controller="PurList">
+    <div class="panel panel-default">
+        <div class="panel-heading">
+            <div class="row">
+
+                <div class="col-sm-4 col-xs-12">
+                    <form class="form-horizontal">
+                        <div class="form-group">
+                            <label class="col-sm-4 control-label"><span class="text-muted">选择地址</span></label>
+                            <div class="col-sm-6">
+                                <input select-address p="p" c="c" a="a" d="d" ng-model="site" placeholder="请选择所在地"
+                                       type="text" class="form-control"/>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+
+
+                <div class="input-group col-sm-4 col-xs-12">
+                    <div class="col-sm-6">
+                        <input type="text" class="form-control" ng-model="userSearchText" placeholder="订单编号">
+                    </div>
+                    <button class="btn btn-primary add">查询</button>
+                </div>
+
+
+                <div class="col-sm-4 col-xs-12"></div>
+            </div>
+        </div>
+
+
+        <table class="table customer-order table-striped" style="text-align: center">
+            <thead>
+            <tr>
+                <th rowspan="2">订单</th>
+                <th rowspan="2">客户</th>
+                <th rowspan="2">客户手机号</th>
+                <th rowspan="2">下单时间</th>
+                <th rowspan="2">工种</th>
+                <th rowspan="2">订单金额(元)</th>
+                <th rowspan="2">接单师傅</th>
+                <th rowspan="2">接单师傅手机号码</th>
+                <th>订单状态</th>
+                <th>订单评价</th>
+                <th rowspan="2">投诉</th>
+                <th rowspan="2">操作</th>
+            </tr>
+            <tr>
+                <td><span class="mr10">撤单</span> <span class="mr10">暂停</span> <span>完工</span></td>
+                <td><span class="mr10">质量</span> <span class="mr10">服务</span> <span>速度</span></td>
+            </tr>
+            </thead>
+            <tbody>
+
+            <tr>
+                <td>P20170801-1</td>
+                <td>萧大师</td>
+                <td>18279661738</td>
+                <td>2017/08/01</td>
+                <td>电工</td>
+                <td>1200</td>
+                <td>萧师傅</td>
+                <td>18279661738</td>
+                <td><span class="mr20">无&nbsp;</span> <span class="mr20">无&nbsp;</span> <span>&nbsp;是</span></td>
+                <td><span class="mr20">好&nbsp;</span> <span class="mr20">好&nbsp;</span> <span>&nbsp;快</span></td>
+                <td>无</td>
+                <td>有</td>
+            </tr>
+
+            </tbody>
+        </table>
+    </div>
+
+</div>

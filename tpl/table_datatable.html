@@ -1,0 +1,159 @@
+<div class="wrapper-md" ng-controller="myCtrl">
+    <div class="panel panel-default">
+        <div class="panel-heading">
+
+            <button class="btn btn-primary add" data-toggle="modal" data-target="#addInfo">
+                添加
+            </button>
+            <div class="form-group seek pull-right">
+                <input type="text" class="form-control d-i" placeholder="请输入关键字" ng-model="test">
+            </div>
+        </div>
+        <table class="table table-striped" style="text-align: center">
+            <thead>
+            <tr>
+                <th style="width: 15%;text-align: center">序号</th>
+                <th style="width: 20%;text-align: center">工种名称</th>
+                <th style="width: 20%;text-align: center">工种价格/平方</th>
+                <th style="width: 20%;text-align: center">说明</th>
+                <th style="width: 25%;text-align: center">操作</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr ng-repeat="x in items | filter:test">
+                <td>{{ x.id }}</td>
+                <td>{{x.construction_type_name}}</td>
+                <td>{{x.unitprice}}</td>
+                <td>{{x.remark}}</td>
+                <td>
+
+                    <button class="btn btn-warning" data-toggle="modal" data-target="#revamp" ng-click="update($index)">
+                        修改
+                    </button>
+                    <button class="btn btn-danger" ng-click="del($index)">
+                        删除
+                    </button>
+                </td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+    <!--显示数据条数-->
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-lg-6 col-md-6" style="height: 74px;line-height: 74px;">
+                每页显示
+                <select ng-model="number">
+                    <option value="5">5</option>
+                    <option value="10">10</option>
+                    <option value="15">15</option>
+                </select>
+                条数据 &nbsp;&nbsp;
+                <!--显示数据条数-->
+                一共 <span class="tc">{{pages}}</span>页 当前为第 <span class="tc"> {{selPage}} </span>页
+                &nbsp;&nbsp;  共 <span class="tc">{{amount}} </span>条数据
+            </div>
+
+            <div class="col-lg-6 col-md-6">
+                <ul class="pagination pull-right">
+                    <li>
+                        <a ng-click="Previous()">
+                            <span>上一页</span>
+                        </a>
+                    </li>
+                    <li ng-repeat="page in pageList" ng-class="{active: isActivePage(page)}">
+                        <a ng-click="selectPage(page)">{{ page }}</a>
+                    </li>
+                    <li>
+                        <a ng-click="Next()">
+                            <span>下一页</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+
+    <!--statr--添加信息 -->
+    <div class="modal fade" id="addInfo">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+                        &times;
+                    </button>
+                    <h4 class="modal-title c" id="myModalLabel">添加信息</h4>
+                </div>
+
+                <div class="modal-body c">
+
+                    <div class="form-group">
+                        <label for="name">工种名称：</label>
+                        <input type="text" class="form-control d-i w5" id="name"
+                               ng-model="newName">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="name1">工种价格：</label>
+                        <input type="text" class="form-control d-i w5" id="name1"
+                               ng-model="newUnitprice">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="name2">说明：</label>
+                        <input class="form-control d-i w5" type="text" id="name2" ng-model="newRemark">
+                    </div>
+
+                </div>
+
+                <div class="modal-footer c">
+                    <button type="button" class="btn btn-default ml" data-dismiss="modal">取消</button>
+                    <button class="btn btn-success" ng-click="save()">保存</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end--添加信息 -->
+
+    <!-- 修改信息 -->
+    <div class="modal fade" id="revamp">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+                        &times;
+                    </button>
+                    <h3 class="modal-title c">修改信息</h3>
+                </div>
+
+                <div class="modal-body c">
+                    <div class="form-group">
+                        <label>工种名称：</label>
+                        <input class="form-control d-i w5" ng-model="prod.construction_type_name"
+                               value="{{prod.construction_type_name}}" type="text">
+                    </div>
+
+                    <div class="form-group">
+                        <label>工种价格：</label>
+                        <input class="form-control d-i w5" ng-model="prod.unitprice"
+                               value="{{prod.unitprice}}" type="text">
+                    </div>
+                    <div class="form-group">
+                        <label>说明：</label>
+                        <input class="form-control d-i w5" ng-model="prod.remark"
+                               value="{{prod.remark}}" type="text">
+                    </div>
+
+                </div>
+                <div class="modal-footer c">
+                    <button type="button" class="btn btn-default ml" data-dismiss="modal">
+                        取消
+                    </button>
+                    <button class="btn btn-success" ng-click="ensure()">修改</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--end-修改信息 -->
+</div>

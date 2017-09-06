@@ -1,0 +1,66 @@
+<div class="wrapper-md">
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <div class="row">
+
+        <div class="col-sm-4 col-xs-12">
+          <form class="form-horizontal">
+            <div class="form-group">
+              <label class="col-sm-4 control-label"><span class="text-muted">选择地址</span></label>
+              <div class="col-sm-6">
+                <input select-address p="p" c="c" a="a" d="d" ng-model="site" placeholder="请选择所在地"
+                       type="text" class="form-control"/>
+              </div>
+            </div>
+          </form>
+        </div>
+
+
+        <div class="input-group col-sm-4 col-xs-12">
+          <div class="col-sm-6">
+            <input type="text" class="form-control" ng-model="userSearchText" placeholder="订单编号">
+          </div>
+          <button class="btn btn-primary add">查询</button>
+        </div>
+
+
+        <div class="col-sm-4 col-xs-12"></div>
+      </div>
+    </div>
+
+
+    <table class="table customer-order table-striped" style="text-align: center">
+      <thead>
+      <tr>
+        <th>订单</th>
+        <th >客户</th>
+        <th >客户手机号</th>
+        <th >下单时间</th>
+        <th >工种</th>
+        <th>订单金额(元)</th>
+        <th >接单师傅</th>
+        <th >接单师傅手机号码</th>
+        <th>接单与否</th>
+        <th>改派订单</th>
+        <th >备注</th>
+      </tr>
+      </thead>
+      <tbody>
+      <tr>
+        <td>P20170801-1</td>
+        <td>萧大师</td>
+        <td>18279661738</td>
+        <td>2017/08/01</td>
+        <td>电工</td>
+        <td>1200</td>
+        <td>萧师傅</td>
+        <td>18279661738</td>
+        <td>未接</td>
+        <td>已改派</td>
+        <td>备注</td>
+      </tr>
+
+      </tbody>
+    </table>
+  </div>
+</div>

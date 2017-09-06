@@ -1,0 +1,406 @@
+<!-- list -->
+<ul class="nav">
+  <li class="hidden-folded padder m-t m-b-sm text-muted text-xs">
+    <span translate="aside.nav.HEADER">控制台</span>
+  </li>
+  <li>
+    <a href class="auto">      
+      <span class="pull-right text-muted">
+        <i class="fa fa-fw fa-angle-right text"></i>
+        <i class="fa fa-fw fa-angle-down text-active"></i>
+      </span>
+      <i class="glyphicon glyphicon-stats icon text-primary-dker"></i>
+      <span class="font-bold" >订单管理</span>
+    </a>
+    <ul class="nav nav-sub dk">
+
+      <li ui-sref-active="active">
+        <a ui-sref="app.purlist">
+          <span>客户订单</span>
+        </a>
+      </li>
+
+      <li ui-sref-active="active">
+        <a ui-sref="app.distributedetail">
+          <b class="label bg-info pull-right">N</b>
+          <span>派单明细</span>
+        </a>
+      </li>
+
+      <li ui-sref-active="active">
+        <a ui-sref="app.information">
+          <b class="label bg-info pull-right">N</b>
+          <span>信息通知</span>
+        </a>
+      </li>
+
+    </ul>
+  </li>
+
+       <!--财务管理开始-->
+  <li>
+    <a href class="auto">
+      <span class="pull-right text-muted">
+        <i class="fa fa-fw fa-angle-right text"></i>
+        <i class="fa fa-fw fa-angle-down text-active"></i>
+      </span>
+      <i class="glyphicon glyphicon-stats icon text-primary-dker"></i>
+      <span class="font-bold" >财务管理</span>
+    </a>
+    <ul class="nav nav-sub dk">
+
+      <li ui-sref-active="active">
+        <a ui-sref="app.income">
+          <span>收支明细</span>
+        </a>
+      </li>
+
+      <li ui-sref-active="active">
+        <a ui-sref="app.expend">
+          <b class="label bg-info pull-right">N</b>
+          <span>当日支出</span>
+        </a>
+      </li>
+    </ul>
+  </li>
+       <!--结束-->
+
+     <!--账户管理开始-->
+
+  <li>
+    <a href class="auto">
+      <span class="pull-right text-muted">
+        <i class="fa fa-fw fa-angle-right text"></i>
+        <i class="fa fa-fw fa-angle-down text-active"></i>
+      </span>
+      <i class="glyphicon glyphicon-stats icon text-primary-dker"></i>
+      <span class="font-bold" >账户管理</span>
+    </a>
+    <ul class="nav nav-sub dk">
+      <li ui-sref-active="active">
+        <a ui-sref="app.table.static">
+          <span>客户管理</span>
+        </a>
+      </li>
+      <li ui-sref-active="active">
+        <a ui-sref="app.distributedetail">
+          <b class="label bg-info pull-right">N</b>
+          <span>师傅管理</span>
+        </a>
+      </li>
+      <li ui-sref-active="active">
+        <a ui-sref="app.distributedetail">
+          <b class="label bg-info pull-right">N</b>
+          <span>用户管理</span>
+        </a>
+      </li>
+      <li ui-sref-active="active">
+        <a ui-sref="app.distributedetail">
+          <b class="label bg-info pull-right">N</b>
+          <span>权限设置</span>
+        </a>
+      </li>
+    </ul>
+  </li>
+            <!--结束-->
+
+     <!--分享管理开始-->
+  <li>
+    <a href class="auto">
+      <span class="pull-right text-muted">
+        <i class="fa fa-fw fa-angle-right text"></i>
+        <i class="fa fa-fw fa-angle-down text-active"></i>
+      </span>
+      <i class="glyphicon glyphicon-stats icon text-primary-dker"></i>
+      <span class="font-bold" >分享管理</span>
+    </a>
+    <ul class="nav nav-sub dk">
+      <li ui-sref-active="active">
+        <a ui-sref="app.purlist">
+          <span>分享列表</span>
+        </a>
+      </li>
+    </ul>
+  </li>
+        <!--结束-->
+
+       <!--保险管理开始-->
+  <li>
+  <a href class="auto">
+      <span class="pull-right text-muted">
+        <i class="fa fa-fw fa-angle-right text"></i>
+        <i class="fa fa-fw fa-angle-down text-active"></i>
+      </span>
+    <i class="glyphicon glyphicon-stats icon text-primary-dker"></i>
+    <span class="font-bold" >保险管理</span>
+  </a>
+  <ul class="nav nav-sub dk">
+    <li ui-sref-active="active">
+      <a ui-sref="app.purlist">
+        <span>师傅保险</span>
+      </a>
+    </li>
+    <li ui-sref-active="active">
+      <a ui-sref="app.purlist">
+        <span>工程保险</span>
+      </a>
+    </li>
+  </ul>
+  </li>
+
+  <li>
+    <a href class="auto">
+      <span class="pull-right text-muted">
+        <i class="fa fa-fw fa-angle-right text"></i>
+        <i class="fa fa-fw fa-angle-down text-active"></i>
+      </span>
+      <i class="glyphicon glyphicon-th-large icon text-success"></i>
+      <span class="font-bold">基本数据设置</span>
+    </a>
+    <ul class="nav nav-sub dk">
+      <li class="nav-sub-header">
+        <a href>
+          <span>Apps</span>
+        </a>
+      </li>
+      <li ui-sref-active="active">
+        <a ui-sref="app.craft">
+          <span>工种类别</span>
+        </a>
+      </li>
+      <li ui-sref-active="active">
+        <a ui-sref="apps.contact">
+          <span>施工场所</span>
+        </a>
+      </li>
+      <li ui-sref-active="active">
+        <a ui-sref="app.weather">
+          <span>角色</span>
+        </a>
+      </li>
+    </ul>
+  </li>
+
+  <li class="line dk"></li>
+
+  <li class="hidden-folded padder m-t m-b-sm text-muted text-xs">
+    <span translate="aside.nav.components.COMPONENTS">Components</span>
+  </li>
+
+
+<!-- start-保留菜单1-->
+  <!--<li>-->
+    <!--<a href class="auto">-->
+      <!--<span class="pull-right text-muted">-->
+        <!--<i class="fa fa-fw fa-angle-right text"></i>-->
+        <!--<i class="fa fa-fw fa-angle-down text-active"></i>-->
+      <!--</span>-->
+      <!--<b class="badge bg-info pull-right">3</b>-->
+      <!--<i class="glyphicon glyphicon-th"></i>-->
+      <!--<span>保留菜单</span>-->
+    <!--</a>-->
+    <!--<ul class="nav nav-sub dk">-->
+      <!--<li class="nav-sub-header">-->
+        <!--<a href>-->
+          <!--<span>保留菜单1-1</span>-->
+        <!--</a>-->
+      <!--</li>-->
+      <!--<li ui-sref-active="active">-->
+        <!--<a ui-sref="layout.app">-->
+          <!--<span>保留菜单1-2</span>-->
+        <!--</a>-->
+      <!--</li>-->
+      <!--<li ui-sref-active="active">-->
+        <!--<a ui-sref="layout.fullwidth">-->
+          <!--<span>保留菜单1-3</span>-->
+        <!--</a>-->
+      <!--</li>-->
+      <!--<li ui-sref-active="active">-->
+        <!--<a ui-sref="layout.mobile">-->
+          <!--<span>Mobile</span>-->
+        <!--</a>-->
+      <!--</li>-->
+    <!--</ul>-->
+  <!--</li>-->
+
+  <!-- end-保留菜单1-->
+
+  <!--start- 保留菜单2-->
+
+  <li ng-class="{active:$state.includes('app.ui')}">
+    <a href class="auto">
+      <span class="pull-right text-muted">
+        <i class="fa fa-fw fa-angle-right text"></i>
+        <i class="fa fa-fw fa-angle-down text-active"></i>
+      </span>
+      <i class="glyphicon glyphicon-briefcase icon"></i>
+      <span >保留菜单</span>
+    </a>
+    <ul class="nav nav-sub dk">
+      <li class="nav-sub-header">
+        <a href>
+          <span >UI Kits</span>
+        </a>
+      </li>
+      <li ui-sref-active="active">
+        <a ui-sref="app.ui.buttons">
+          <span >保留菜单1-1</span>
+        </a>
+      </li>
+      <li ui-sref-active="active">
+        <a ui-sref="app.ui.icons">
+          <b class="badge bg-info pull-right">3</b>
+          <span >保留菜单1-2</span>
+        </a>
+      </li>
+      <li ui-sref-active="active">
+        <a ui-sref="app.ui.grid">
+          <span >保留菜单1-3</span>
+        </a>
+      </li>
+      <li ui-sref-active="active">
+        <a ui-sref="app.ui.widgets">
+          <b class="badge bg-success pull-right">13</b>
+          <span >保留菜单1-4</span>
+        </a>
+      </li>
+      <li ui-sref-active="active">
+        <a ui-sref="app.ui.bootstrap">
+          <b class="badge bg-primary pull-right">16</b>
+          <span >保留菜单1-5</span>
+        </a>
+      </li>
+      <li ui-sref-active="active">
+        <a ui-sref="app.ui.sortable">
+          <span>保留菜单1-6</span>
+        </a>
+      </li>
+      <li ui-sref-active="active">
+        <a ui-sref="app.ui.portlet">
+          <span>保留菜单1-7</span>
+        </a>
+      </li>
+      <li ui-sref-active="active">
+        <a ui-sref="app.ui.timeline">
+          <span >保留菜单1-8</span>
+        </a>
+      </li>
+      <li ui-sref-active="active">
+        <a ui-sref="app.ui.tree">
+          <span>保留菜单2-1</span>
+        </a>
+      </li>
+      <li ui-sref-active="active">
+        <a ui-sref="app.ui.toaster">
+          <span>保留菜单2-2</span>
+        </a>
+      </li>
+
+
+    </ul>
+  </li>
+
+  <!--end- 保留菜单2-->
+
+
+
+
+  <!--<li ui-sref-active="active">-->
+    <!--<a ui-sref="app.chart">-->
+      <!--<i class="glyphicon glyphicon-signal"></i>-->
+      <!--<span translate="aside.nav.components.CHART">保留菜单</span>-->
+    <!--</a>-->
+  <!--</li>-->
+
+
+
+  <li ng-class="{active:$state.includes('app.page')}">
+    <a href class="auto">
+      <span class="pull-right text-muted">
+        <i class="fa fa-fw fa-angle-right text"></i>
+        <i class="fa fa-fw fa-angle-down text-active"></i>
+      </span>
+      <i class="glyphicon glyphicon-file icon"></i>
+      <span translate="aside.nav.components.pages.PAGES">用户中心</span>
+    </a>
+    <ul class="nav nav-sub dk">
+      <li class="nav-sub-header">
+        <a href>
+          <span translate="aside.nav.components.pages.PAGES">Pages</span>
+        </a>
+      </li>
+      <li ui-sref-active="active">
+        <a ui-sref="app.page.profile">
+          <span translate="aside.nav.components.pages.PROFILE">个人信息</span>
+        </a>
+      </li>
+      <li ui-sref-active="active">
+        <a ui-sref="app.page.post">
+          <span translate="aside.nav.components.pages.POST">Post</span>
+        </a>
+      </li>
+      <li ui-sref-active="active">
+        <a ui-sref="app.page.search">
+          <span translate="aside.nav.components.pages.SEARCH">Search</span>
+        </a>
+      </li>
+      <li ui-sref-active="active">
+        <a ui-sref="app.page.invoice">
+          <span translate="aside.nav.components.pages.INVOICE">Invoice</span>
+        </a>
+      </li>
+      <li ui-sref-active="active">
+        <a ui-sref="app.page.price">
+          <span>Price</span>
+        </a>
+      </li>
+      <li>
+        <a ui-sref="lockme">
+          <span translate="aside.nav.components.pages.LOCK_SCREEN">Lock screen</span>
+        </a>
+      </li>
+
+      <!--<li>-->
+        <!--<a ui-sref="access.signin">-->
+          <!--<span translate="aside.nav.components.pages.SIGNIN">Signin</span>-->
+        <!--</a>-->
+      <!--</li>-->
+      <!--<li>-->
+        <!--<a ui-sref="access.signup">-->
+          <!--<span translate="aside.nav.components.pages.SIGNUP">Signup</span>-->
+        <!--</a>-->
+      <!--</li>-->
+      <!--<li>-->
+        <!--<a ui-sref="access.forgotpwd">-->
+          <!--<span translate="aside.nav.components.pages.FORGOT_PASSWORD">Forgot password</span>-->
+        <!--</a>-->
+      <!--</li>-->
+
+      <li>
+        <a ui-sref="access.404">
+          <span translate="aside.nav.components.pages.404">404</span>
+        </a>
+      </li>
+    </ul>
+  </li>
+
+  <li class="line dk hidden-folded"></li>
+
+  <li class="hidden-folded padder m-t m-b-sm text-muted text-xs">          
+    <span translate="aside.nav.your_stuff.YOUR_STUFF">Your Stuff</span>
+  </li>  
+  <li>
+    <a ui-sref="app.page.profile">
+      <i class="icon-user icon text-success-lter"></i>
+      <b class="badge bg-success pull-right">30%</b>
+      <span translate="aside.nav.your_stuff.PROFILE">Profile</span>
+    </a>
+  </li>
+  <li>
+    <a ui-sref="app.docs">
+      <i class="icon-question icon"></i>
+      <span translate="aside.nav.your_stuff.DOCUMENTS">Documents</span>
+    </a>
+  </li>
+</ul>
+<!-- / list -->

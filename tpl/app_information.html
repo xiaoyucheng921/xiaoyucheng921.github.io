@@ -1,0 +1,54 @@
+<div class="wrapper-md" ng-controller="Infornation">
+  <div class="panel panel-default">
+
+    <div class="panel-heading">
+      <div class="row">
+
+        <div class="col-sm-4 col-xs-12">
+          <form class="form-horizontal">
+            <div class="form-group">
+              <label class="col-sm-4 control-label"><span class="text-muted">选择地址</span></label>
+              <div class="col-sm-6">
+                <input select-address p="p" c="c" a="a" d="d" ng-model="site" placeholder="请选择所在地"
+                       type="text" class="form-control"/>
+              </div>
+            </div>
+          </form>
+        </div>
+
+
+        <div class="input-group col-sm-4 col-xs-12">
+          <div class="col-sm-6">
+            <input type="text" class="form-control" ng-model="userSearchText" placeholder="订单编号">
+          </div>
+          <button class="btn btn-primary add">查询</button>
+        </div>
+
+        <div class="col-sm-4 col-xs-12"></div>
+      </div>
+    </div>
+
+
+    <table class="table customer-order table-striped" style="text-align: center">
+      <thead>
+      <tr>
+        <th>消息类别</th>
+        <th >信息接收人</th>
+        <th >信息接收人手机号</th>
+        <th >信息内容</th>
+      </tr>
+      </thead>
+      <tbody>
+      <tr>
+
+        <td>平台通知</td>
+        <td>张先生</td>
+        <td>13898881688</td>
+        <td>张先生您好，您的身份认证已经通过，可以在《好师傅装修》平台开始接单了</td>
+        <td>2017/06/29</td>
+      </tr>
+
+      </tbody>
+    </table>
+  </div>
+</div>
